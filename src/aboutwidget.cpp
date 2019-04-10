@@ -6,5 +6,6 @@ AboutWidget::AboutWidget(QWidget* parent) : QDialog(parent), ui(new Ui::AboutWid
 }
 
 AboutWidget::~AboutWidget() {
+    // Test f
     delete ui;
 }
