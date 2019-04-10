@@ -39,6 +39,7 @@ script:
     - source ${TRAVIS_BUILD_DIR}/scripts/${RIPES_PLATFORM}/travisbuild.sh
 
 after_success:
+    - if: type = "push" AND branch = "master"
     - source ${TRAVIS_BUILD_DIR}/scripts/${RIPES_PLATFORM}/after_success.sh
     
 branches:
